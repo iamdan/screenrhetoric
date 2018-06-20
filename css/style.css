@@ -9,11 +9,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles below */
 
 html {
-  font-family: Helvetica, Tahoma, "Lucide Grande", Arial, sans-serif;
+  font-family: 'Lora', serif;
+  /* font-family: Helvetica, Tahoma, "Lucide Grande", Arial, sans-serif; */
   /* target /context = result 18/16 */
   font-size: 1.125rem;
   line-height: 1.2222222222rem;
-  padding: .6111111111111rem;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -21,7 +22,8 @@ p {
 }
 
 h1, h2, h3, h4 {
-  font-weight: bold;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
 }
 
 h1 {
@@ -437,4 +439,103 @@ experimenting with new footer
     background-color: white;
     display: none;
     overflow: hidden;
+}
+
+
+/* =================
+    Custom Styles
+    June 20, 2018
+   =================*/
+
+/* header */
+.header {
+  background: #BB9E6A;
+  box-shadow: 0 10px 15px #ccc;
+}
+
+.header h1 {
+  color: white;
+  margin: 0;
+  padding: 30px 0;
+  min-height: 70px;
+}
+
+.header nav {
+  background: #C68723;
+}
+
+.header nav ul li {
+  transition: 0.2s ease-in-out all;
+  border-radius: 3px;
+  border: 1px solid #ffdba4;
+  padding: 15px 25px;
+  margin: 20px;
+  color: #ffdba4;
+}
+
+.header nav ul li:hover {
+  background: #ffdba4;
+  color: #C68723;
+}
+
+@media (min-width: 1024px) {
+  .header nav ul {
+    display: flex;
+  }
+  .header h1 {
+    min-height: 140px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header nav {
+    padding: 10px 0;
+  }
+}
+
+/* Panel */
+.show-panel {
+  line-height: 1.25rem;
+  padding: 30px 90px;
+  background: #f7ebd8;
+  border-radius: 6px;
+  border: 1px solid #ece2ce;
+  color: #757575;
+}
+
+@media (min-width: 1024px) {
+  .show-panel {
+    padding: 50px 0 50px 40px;
+  }
+
+  .show-panel p {
+    width: 800px;
+  }
+}
+
+/* common */
+@media (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  padding-top: 25px;
+}
+
+li {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+/* custom index page */
+#header {
+  background-image: url('../images/videoicon.png');
+  background-repeat: no-repeat;
+  background-position: bottom 15% right 20%;
 }
