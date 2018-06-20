@@ -577,3 +577,14 @@ li {
   transform: rotate(-8deg);
   transform-origin:0 100%;
 }
+
+/* footer */
+footer {
+  background: #795315;
+  min-height: 100px;
+  color: white;
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
