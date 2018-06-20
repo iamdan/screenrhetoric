@@ -446,7 +446,7 @@ experimenting with new footer
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: #efefef;
     display: none;
     overflow: hidden;
 }
@@ -616,3 +616,39 @@ footer {
 }
 
 /* article */
+.page-content {
+  margin-bottom: 100px;
+}
+
+.page-content p {
+  line-height: 1.5rem;
+}
+
+.page-content h2 {
+  font-size: 1.3rem;
+  padding: 40px 0;
+}
+
+.page-content .pullquote-left {
+  padding: 40px;
+  box-sizing: border-box;
+  margin-right: 30px;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 1.5rem;
+}
+
+.page-content .pullquote-right {
+  padding: 40px;
+  box-sizing: border-box;
+  margin-left: 30px;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .pullquote-left, .pullquote-right {
+    float: none;
+    margin: 20px 0!important;
+    width: 100%;
+  }
+}
