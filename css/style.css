@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin|Lora");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -9,11 +10,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles below */
 
 html {
-  font-family: Helvetica, Tahoma, "Lucide Grande", Arial, sans-serif;
+  font-family: 'Lora', serif;
+  /* font-family: Helvetica, Tahoma, "Lucide Grande", Arial, sans-serif; */
   /* target /context = result 18/16 */
   font-size: 1.125rem;
   line-height: 1.2222222222rem;
-  padding: .6111111111111rem;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -21,7 +23,8 @@ p {
 }
 
 h1, h2, h3, h4 {
-  font-weight: bold;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
 }
 
 h1 {
@@ -232,7 +235,7 @@ experimenting with new footer
 	text-align: center;
 }
 
-.opening-photo-grid li {
+.opening-photo-grid > li {
 	border: 5px solid white;
 	display: inline-block;
 	margin: 10px;
@@ -268,11 +271,14 @@ experimenting with new footer
 }
 
 .opening-photo-grid figcaption p {
+  box-sizing: border-box;
+  padding: 10px;
 	display: block;
 	position: relative;
 	top: 35px;
 	width: 300px;
-	vertical-align: middle;
+  vertical-align: middle;
+  font-size: 0.9rem;
 }
 
 .opening-photo-grid li:hover figcaption {
@@ -288,7 +294,7 @@ experimenting with new footer
 
 .caption-themes  {
   background: #999;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.2rem;
 	display: block;
 	height: auto;
@@ -299,12 +305,13 @@ experimenting with new footer
 }
 
 .caption-topic  {
+  padding: 5px;
   background: #999;
   font-size: 1rem;
   line-height: 1.2rem;
 	display: block;
 	height: 30px;
-
+  box-sizing: border-box;
 	width: 300px;
   position: absolute;
 	right: 0;
@@ -322,16 +329,20 @@ experimenting with new footer
 
 
 .photo-grid {
-	margin: 10px;
 	max-width: 1200px;
-	text-align: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .photo-grid li {
-	border: 5px solid white;
 	display: inline-block;
 	margin: 10px;
-	width: 150px;
+  width: 150px;
+}
+
+.photo-grid li a {
+  color: white;
+  font-size: 0.8rem;
 }
 
 .photo-grid img {
@@ -352,7 +363,8 @@ experimenting with new footer
 	color: white;
 	display: table;
 	height: 100%;
-  font-size: .81rem;
+  font-size: .7rem;
+  padding: 2px;
   line-height: 1rem;
 	left: 0;
 	opacity: 0;
@@ -434,7 +446,209 @@ experimenting with new footer
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: #efefef;
     display: none;
     overflow: hidden;
+}
+
+
+/* =================
+    Custom Styles
+    June 20, 2018
+   =================*/
+
+/* header */
+.header {
+  background: #BB9E6A;
+  box-shadow: 0 10px 15px #ccc;
+}
+
+.header h1 {
+  color: white;
+  margin: 0;
+  padding: 30px 0;
+  min-height: 70px;
+}
+
+.header nav {
+  background: #C68723;
+}
+
+.header nav ul li {
+  transition: 0.2s ease-in-out all;
+  border-radius: 3px;
+  border: 1px solid #ffdba4;
+  padding: 15px 25px;
+  margin: 20px;
+  color: #ffdba4;
+}
+
+.header nav ul li:hover {
+  background: #ffdba4;
+  color: #C68723;
+}
+
+@media (min-width: 1024px) {
+  .header nav ul {
+    display: flex;
+  }
+  .header h1 {
+    min-height: 140px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header nav {
+    padding: 10px 0;
+  }
+}
+
+header + article {
+  margin-top: 40px!important;
+}
+
+/* Panel */
+.show-panel {
+  line-height: 1.25rem;
+  padding: 30px 90px;
+  background: #f7ebd8;
+  border-radius: 6px;
+  border: 1px solid #ece2ce;
+  color: #757575;
+}
+
+@media (min-width: 1024px) {
+  .show-panel {
+    padding: 50px 0 50px 40px;
+  }
+
+  .show-panel p {
+    width: 800px;
+  }
+}
+
+/* common */
+@media (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  padding-top: 25px;
+}
+
+li {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+/* custom index page */
+#header {
+  background-image: url('../images/videoicon.png');
+  background-repeat: no-repeat;
+  background-position: bottom 15% right 20%;
+}
+
+/* opening-photo-grid */
+.opening-photo-grid {
+  margin: initial;
+  max-width: initial;
+  margin-top: 20px;
+}
+
+.opening-photo-grid h2 {
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+.opening-photo-grid li figcaption {
+  transition: 0.3s all ease-in-out;
+}
+
+.opening-photo-grid li img {
+  transition: 0.1s all ease-in-out;
+}
+
+.opening-photo-grid li:hover img {
+  transform: scale(1.15);
+}
+
+.opening-photo-grid li h2 {
+  transition: 0.1s all ease-in-out;
+}
+
+.opening-photo-grid li:hover h2 {
+  transform: rotate(-8deg);
+  transform-origin:0 100%;
+}
+
+/* footer */
+footer {
+  background: #795315;
+  min-height: 100px;
+  color: white;
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+/* .accordion */
+.accordion {
+  position: relative;
+}
+.accordion::after {
+  display: inline-block;
+  content: "";
+  background: url('../images/arrow.png');
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+/* article */
+.page-content {
+  margin-bottom: 100px;
+}
+
+.page-content p {
+  line-height: 1.5rem;
+}
+
+.page-content h2 {
+  font-size: 1.3rem;
+  padding: 40px 0;
+}
+
+.page-content .pullquote-left {
+  padding: 40px;
+  box-sizing: border-box;
+  margin-right: 30px;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 1.5rem;
+}
+
+.page-content .pullquote-right {
+  padding: 40px;
+  box-sizing: border-box;
+  margin-left: 30px;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .pullquote-left, .pullquote-right {
+    float: none;
+    margin: 20px 0!important;
+    width: 100%;
+  }
 }
