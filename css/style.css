@@ -55,8 +55,8 @@ nav.top-menu li a {
     text-decoration: none;
 }
 
-nav.top-menu li a:hover {
-    background-color: #111;
+nav.top-menu li a:hover li a:active {
+    background-color: #999;
 }
 
 
@@ -73,15 +73,7 @@ video.portrait {
 }
 
 
-aside.materials {
-  display:block;
-  font-size: .809rem;
-  width: 30%;
-  background: #eee;
-  background-image: url("assets/img/materials-900-60.jpg");
-  padding: 10px;
-  margin: auto;
-}
+
 
 aside.video {
   float: left;
@@ -459,33 +451,33 @@ experimenting with new footer
 
 /* header */
 .header {
-  background: #BB9E6A;
+  background: #333;
   box-shadow: 0 10px 15px #ccc;
 }
 
 .header h1 {
-  color: white;
+  color: #333;
   margin: 0;
   padding: 30px 0;
   min-height: 70px;
 }
 
 .header nav {
-  background: #C68723;
+  background: #333;
 }
 
 .header nav ul li {
   transition: 0.2s ease-in-out all;
   border-radius: 3px;
-  border: 1px solid #ffdba4;
+  border: 1px solid #999;
   padding: 15px 25px;
   margin: 20px;
-  color: #ffdba4;
+  color: #999;
 }
 
 .header nav ul li:hover {
-  background: #ffdba4;
-  color: #C68723;
+  background: #999;
+  color: #333;
 }
 
 @media (min-width: 1024px) {
@@ -511,10 +503,10 @@ header + article {
 .show-panel {
   line-height: 1.25rem;
   padding: 30px 90px;
-  background: #f7ebd8;
+  background: #999;
   border-radius: 6px;
   border: 1px solid #ece2ce;
-  color: #757575;
+  color: #222;
 }
 
 @media (min-width: 1024px) {
@@ -549,7 +541,7 @@ li {
 
 /* custom index page */
 #header {
-  background-image: url('../images/videoicon.png');
+  background-image: url('../assets/img/header-bg.jpg');
   background-repeat: no-repeat;
   background-position: bottom 15% right 20%;
 }
@@ -590,7 +582,7 @@ li {
 
 /* footer */
 footer {
-  background: #795315;
+  background: #333;
   min-height: 100px;
   color: white;
   font-family: 'Libre Franklin', sans-serif;
