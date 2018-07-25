@@ -443,6 +443,14 @@ experimenting with new footer
     overflow: hidden;
 }
 
+.panel h3 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  padding-bottom: .6rem;
+  padding-top: 1.6rem;
+}
 
 /* =================
     Custom Styles
