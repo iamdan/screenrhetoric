@@ -82,6 +82,18 @@ aside.video {
   max-width: 40%;
 }
 
+figure.screenshot {
+
+  background: #222;
+  color: #eee;
+  padding: 0.61111111rem;
+  margin: auto;
+
+}
+figure.screenshot-left p {
+   padding-top: 0.61111111rem;
+ }
+
 
 figure.screenshot-left {
     float: left;
