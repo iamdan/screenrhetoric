@@ -75,37 +75,51 @@ video.portrait {
 
 
 
-aside.video {
-  float: left;
-  align-content: space-around;
-  margin: auto;
-  max-width: 40%;
-}
+
 
 figure.screenshot {
-
   background: #222;
   color: #eee;
-  padding: 0.61111111rem;
+  padding: 0.42rem;
+  align-content: center;
   margin: auto;
-
 }
-figure.screenshot-left p {
-   padding-top: 0.61111111rem;
+
+figure.screenshot figcaption {
+  text-align: center;
+   padding-top: 0.3rem;
  }
 
 
 figure.screenshot-left {
-    float: left;
+  float: left;
   background: #222;
   color: #eee;
-  padding: 0.61111111rem;
+  padding: 0.42rem;
   margin: auto;
-  max-width: 40%;
+  max-width: 30%;
 }
-figure.screenshot-left p {
-   padding-top: 0.61111111rem;
+figure.screenshot-left figcaption {
+   padding-top: 0.3rem;
+   font-size: .86rem;
+   line-height: .96rem;
+   text-align: center;
  }
+
+ figure.screenshot-right {
+   float: right;
+   background: #222;
+   color: #eee;
+   padding: 0.42rem;
+   margin: auto;
+   max-width: 30%;
+ }
+ figure.screenshot-right figcaption {
+    padding-top: 0.3rem;
+    font-size: .86rem;
+    line-height: .96rem;
+    text-align: center;
+  }
 
 /* layout for opening screen */
 
