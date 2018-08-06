@@ -38,7 +38,7 @@ em {
 }
 
 strong {
-  font-weight: bold;
+  font-weight: 1000;
 }
 
 blockquote {
@@ -50,6 +50,10 @@ blockquote {
 
 blockquote p {
   display: inline;
+}
+
+.container {
+  padding: 0.48rem;
 }
 
 /* top menu */
