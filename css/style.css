@@ -33,6 +33,29 @@ h1 {
   padding-bottom: 1.8333333333333rem;
 }
 
+h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  padding-bottom: 1.3rem;
+  background: #eee;
+  border-left: 10px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 10px;
+
+  padding: 0.5em 10px;
+
+}
+
+h5 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  padding-bottom: .6rem;
+  padding-top: .6rem;
+}
+
 em {
   font-style: italic;
 }
@@ -188,7 +211,7 @@ figure.screenshot-left figcaption {
     padding: 10px;
   	display: block;
   	position: relative;
-  	top: 35px;
+  	top: 30px;
   	width: 300px;
     height: 200px;
     vertical-align: middle;
@@ -307,7 +330,8 @@ figure.screenshot-left figcaption {
   padding: 10px;
 	display: block;
 	position: relative;
-	top: 35px;
+	top: 28px;
+  bottom: 10px;
 	width: 300px;
   vertical-align: middle;
   font-size: 0.9rem;
@@ -325,8 +349,8 @@ figure.screenshot-left figcaption {
 
 .caption-themes  {
   background: #999;
-  font-size: 0.9rem;
-  line-height: 1.2rem;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
 	display: block;
 	height: auto;
 	width: 300px;
@@ -347,6 +371,7 @@ figure.screenshot-left figcaption {
   position: absolute;
 	right: 0;
 	top: 0;
+
 }
 
 
@@ -404,7 +429,7 @@ figure.screenshot-left figcaption {
 	color: white;
 	display: table;
 	height: 100%;
-  font-size: .7rem;
+  font-size: .75rem;
   padding: 2px;
   line-height: 1rem;
 	left: 0;
@@ -418,9 +443,10 @@ figure.screenshot-left figcaption {
 .photo-grid figcaption p {
 	display: table-cell;
 	position: relative;
-	top: -40px;
+	top: 5px;
 	width: 150px;
 	vertical-align: middle;
+
 }
 
 .photo-grid li:hover figcaption {
@@ -482,7 +508,7 @@ color: #999;
     width: 100%;
     text-align: left;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 400;
     border: none;
     outline: none;
     transition: 0.4s;
@@ -503,11 +529,20 @@ color: #999;
 
 .panel h3 {
   font-family: 'Libre Franklin', sans-serif;
-  font-weight: 600;
-  font-size: 1.3rem;
-  line-height: 1.6rem;
+font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
   padding-bottom: .6rem;
-  padding-top: 1.6rem;
+  padding-top: .6rem;
+}
+
+.accordion {
+  font-family: 'Libre Franklin', sans-serif;
+
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  padding-bottom: .6rem;
+  padding-top: .6rem;
 }
 
 /* =================
@@ -522,10 +557,19 @@ color: #999;
 }
 
 .header h1 {
+
   color: #333;
   margin: 0;
-  padding: 30px 0;
-  min-height: 70px;
+  padding: 10px 0;
+
+}
+
+.header h2 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+  color: #333;
+
 }
 
 .header nav {
@@ -551,7 +595,7 @@ color: #999;
     display: flex;
   }
   .header h1 {
-    min-height: 140px;
+    min-height: 120px;
   }
 }
 
@@ -567,9 +611,10 @@ header + article {
 
 /* Panel */
 .show-panel {
+  width: auto;
   line-height: 1.25rem;
-  padding: 30px 90px;
-  background: #999;
+  padding: 20px;
+  background: #eee;
   border-radius: 6px;
   border: 1px solid #ece2ce;
   color: #222;
@@ -577,11 +622,11 @@ header + article {
 
 @media (min-width: 1024px) {
   .show-panel {
-    padding: 50px 0 50px 40px;
+    padding:  10px;
   }
 
   .show-panel p {
-    width: 800px;
+    width: auto;
   }
 }
 
@@ -607,7 +652,7 @@ li {
 
 /* custom index page */
 #header {
-  background-image: url('../assets/img/header-bg.jpg');
+  background-image: url('../assets/img/vs-header-short.jpg');
   background-repeat: no-repeat;
   background-position: bottom 15% right 20%;
 }
