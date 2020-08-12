@@ -13,13 +13,13 @@ html {
   font-family: 'Lora', serif;
   /* font-family: Helvetica, Tahoma, "Lucide Grande", Arial, sans-serif; */
   /* target /context = result 18/16 */
-  font-size: 1.125rem;
-  line-height: 1.2222222222rem;
+  font-size: 1.25rem;
+  line-height: 1.35rem;
   -webkit-font-smoothing: antialiased;
 }
 
 p {
-  padding-bottom: 1.2222222222rem;
+  padding-bottom: 1.375rem;
 }
 
 h1, h2, h3, h4 {
@@ -165,8 +165,7 @@ figure.screenshot-left figcaption {
   }
 
 
-  /* format images in the about page*/
-
+  /* format images in the about page */
 
 
   .about-photo-grid {
@@ -214,9 +213,9 @@ figure.screenshot-left figcaption {
   	position: relative;
   	top: 30px;
   	width: 300px;
-    height: 200px;
+    height: 214px;
     vertical-align: middle;
-    font-size: 0.9rem;
+    font-size: 0.8125rem;
   }
 
 
@@ -316,8 +315,8 @@ figure.screenshot-left figcaption {
 	color: white;
 	display: block;
 	height: 100%;
-  font-size: 1rem;
-  line-height: 1.16rem;
+  font-size: .875rem;
+  line-height: .925rem;
 	left: 0;
 	opacity: 0;
 	position: absolute;
@@ -328,15 +327,22 @@ figure.screenshot-left figcaption {
 
 .opening-photo-grid figcaption p {
   box-sizing: border-box;
-  padding: 10px;
+  padding: 6px;
 	display: block;
 	position: relative;
-	top: 28px;
-  bottom: 10px;
+	top: 30px;
+  bottom: 20px;
 	width: 300px;
   vertical-align: middle;
   font-size: 0.9rem;
 }
+
+
+
+
+
+
+
 
 .opening-photo-grid li:hover figcaption {
 	opacity: 1;
@@ -350,8 +356,8 @@ figure.screenshot-left figcaption {
 
 .caption-themes  {
   background: #999;
-  font-size: 0.8rem;
-  line-height: 1.1rem;
+  font-size: 0.735rem;
+  line-height: 1rem;
 	display: block;
 	height: auto;
 	width: 300px;
@@ -363,8 +369,8 @@ figure.screenshot-left figcaption {
 .caption-topic  {
   padding: 5px;
   background: #999;
-  font-size: 1rem;
-  line-height: 1.2rem;
+  font-size: .8rem;
+  line-height: .9rem;
 	display: block;
 	height: 30px;
   box-sizing: border-box;
@@ -372,6 +378,7 @@ figure.screenshot-left figcaption {
   position: absolute;
 	right: 0;
 	top: 0;
+	
 
 }
 
@@ -429,8 +436,8 @@ figure.screenshot-left figcaption {
 	background: black;
 	color: white;
 	display: table;
-	height: 100%;
-  font-size: .75rem;
+	height: 85px;
+  font-size: .8125rem;
   padding: 2px;
   line-height: 1rem;
 	left: 0;
@@ -438,6 +445,7 @@ figure.screenshot-left figcaption {
 	position: absolute;
 	right: 0;
 	top: 0;
+	bottom: 0;
 	z-index: 100;
 }
 
@@ -445,6 +453,7 @@ figure.screenshot-left figcaption {
 	display: table-cell;
 	position: relative;
 	top: 5px;
+	bottom: 5px;
 	width: 150px;
 	vertical-align: middle;
 
@@ -470,8 +479,61 @@ figure.screenshot-left figcaption {
   display: none;
 }
 
+/* format footer links */
 
+.footer-home-link {
+	font-size: 1.125rem;
+	font-style: italic;
+    width: 50%;
+   	top: 5px;
+	bottom: 5px;
+    margin: auto;
+}
 
+.footer-license-link {
+	font-size: .875rem;
+    width: 50%;
+   	top: 5px;
+	bottom: 5px;
+    margin: auto;
+}
+
+.footer-external-link {
+	font-size: 1rem;
+    width: 50%;
+   	top: 5px;
+	bottom: 5px;
+    margin: auto;
+}
+
+.footer-drc-link {
+	font-size: .9375rem;
+    width: 50%;
+   	top: 5px;
+	bottom: 5px;
+    margin: auto;
+}
+
+.footer-home-link  a:link {
+  color: white;
+  }
+.footer-home-link  a:visited {
+  color: white;
+  }
+
+.footer-external-link  a:link {
+  color: white;
+  }
+.footer-external-link  a:visited {
+  color: white;
+  }
+  
+  .footer-drc-link  a:link {
+  color: white;
+  }
+.footer-drc-link  a:visited {
+  color: white;
+  }
 
 /* format floating quotes */
 
@@ -485,11 +547,18 @@ figure.screenshot-left figcaption {
 }
 
 .attribution {
-padding-left: 10px;
 font-size: 1rem;
 font-style: italic;
 color: #999;
 }
+
+.attribution-title {
+
+font-size: 1rem;
+font-style: italic;
+color: #111;
+}
+
 
 .pullquote-right {
     float: right;
